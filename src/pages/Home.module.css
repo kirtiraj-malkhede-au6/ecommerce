@@ -1,0 +1,51 @@
+.page {
+  margin: 0;
+  position: static;
+  background-color: antiquewhite;
+}
+.product-page {
+  margin: 4.5rem 3vw auto 5vw;
+  width: 92vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.product-page-filter-section {
+  margin-top: 2rem;
+  margin: 2rem 0rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.product-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-main-container-1 {
+  padding: 0;
+  margin: 0;
+}
+.product-page-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Filter section CSS code */
+
+.filter-title {
+  font-size: 1.75rem;
+  margin: 0.5rem;
+  padding: 0rem 0.5rem 0.5rem 0rem;
+  height: 2rem;
+  background-color: white;
+  letter-spacing: 1px;
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}

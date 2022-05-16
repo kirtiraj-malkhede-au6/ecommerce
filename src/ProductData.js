@@ -1,0 +1,26 @@
+const ProductData = [
+  {
+    id: "PID001",
+    title: "",
+    description: "",
+    category: "",
+    sizes: "",
+    brand: "",
+    color: "",
+    Design: "",
+    Fit: "",
+    Sleeve: "",
+    Neck: "",
+    Ratings: "",
+    Offers: "",
+    Discount: "",
+    images: {
+      image1: "",
+      image2: "",
+      image3: "",
+      image4: "",
+      image5: "",
+      image6: "",
+    },
+  },
+];

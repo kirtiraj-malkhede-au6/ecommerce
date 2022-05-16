@@ -1,0 +1,156 @@
+.authpage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ebebeb;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  margin-top: 6.9rem;
+  height: 47rem;
+  width: 93.2rem;
+  background-color: rgb(236, 236, 236);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: stretch;
+}
+.logo {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-box {
+  padding: 2.5rem 5rem 0rem 5rem;
+}
+.logo-name {
+  font-size: 10rem;
+  color: white;
+}
+.title {
+  padding: 5rem;
+}
+.title-name {
+  font-size: 5rem;
+  color: white;
+}
+.auth-container {
+  background-color: #01cd74;
+}
+.auth-container {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.auth-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  align-items: center;
+}
+.auth-logo-icon {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+}
+.auth-logo-name {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+.auth-option-box {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.auth-or {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.auth-form-box {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.auth-email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.auth-email-box span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
+.auth-email-box input {
+  padding: 1rem;
+  font-size: 1.25rem;
+  height: 3rem;
+}
+.auth-email-box input:focus {
+  outline: none;
+}
+.auth-password-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-password-box span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
+.auth-password-box input {
+  padding: 1rem;
+  font-size: 1.25rem;
+  height: 3rem;
+}
+.auth-password-box input:focus {
+  outline: none;
+}
+.auth-extra-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.auth-extra-box span {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.auth-button-box {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+}
+.auth-button-box button {
+  border-style: none;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  font-size: medium;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.auth-button-box button:hover {
+  box-shadow: 1px 1px 10px -1px #000000;
+}
+a {
+  color: blue;
+}
+.auth-terms-box {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}

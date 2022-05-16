@@ -1,0 +1,185 @@
+.container {
+  position: fixed;
+  top: 8.1rem;
+  right: 0rem;
+  float: inline-end;
+  padding: 1rem 1rem 1rem 1rem;
+  max-height: 70rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.wishlist-box {
+  padding: 0.5rem 2rem 0.5rem 0rem;
+  height: 2rem;
+}
+.wishlist-box h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+.wishlist-item-box {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  height: 27rem;
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: none;
+}
+/* scoll bar css  */
+.wishlist-item-box::-webkit-scrollbar {
+  width: 1rem;
+}
+.wishlist-item-box::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 0.35rem;
+  border-color: white;
+  border-radius: 100vw;
+}
+.wishlist-item-box::-webkit-scrollbar-thumb {
+  border-style: solid;
+  border-radius: 100vw;
+  border-width: 0.3rem;
+  border-color: white;
+  /* background-color: aquamarine; */
+  background: linear-gradient(45deg, #0575e6, #00f260);
+}
+.wishlist-item-box::-webkit-scrollbar-thumb:hover {
+  border-width: 0.25rem;
+  transition: 1s;
+}
+.wishlist-item {
+  padding: 2px;
+  height: 8rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.wishlist-item:hover {
+  padding: 1px;
+  border: 2px solid rgb(59, 204, 83);
+}
+.artical-image {
+  padding: 1px;
+  height: calc(8rem-2px);
+  width: 6rem;
+}
+.artical-image img {
+  width: 100%;
+  height: 100%;
+}
+.article-info-box {
+  margin-left: 3rem;
+  height: 7.35rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: white;
+}
+.article-name {
+  padding-top: 2rem;
+  height: 4rem;
+  text-align: center;
+}
+.article-name span {
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+.article-price {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.article-price-headline {
+  padding-top: 0.5rem;
+  height: 1.5rem;
+  width: 3rem;
+  text-align: center;
+}
+.article-price-headline span {
+  font-weight: 600;
+}
+.article-price-box {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  text-align: center;
+}
+.article-price-final {
+  font-weight: 600;
+}
+.article-price-original {
+  text-decoration: line-through;
+}
+.article-price-offer {
+  color: orangered;
+}
+/* responsive breakpoint */
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    padding-top: 3rem;
+    position: fixed;
+
+    height: 100vh;
+    width: 100vw;
+    top: 8rem;
+    right: 0rem;
+    bottom: 0rem;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+  .wishlist-box h3 {
+    color: rgb(0, 0, 0);
+  }
+  .wishlist-item-box {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    height: 37rem;
+    width: 28rem;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    padding-top: 4rem;
+    position: fixed;
+    top: 6rem;
+    right: 0rem;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+  .wishlist-box h3 {
+    color: rgb(0, 0, 0);
+  }
+  .wishlist-item-box {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    height: 36rem;
+    width: 28rem;
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-block {
+  height: 45rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid rgb(0, 5, 5);
+  background-color: white;
+}
+.section-block:hover {
+  border-bottom: 4px solid rgb(0, 247, 255);
+  transition-duration: 1s;
+}
+.title {
+  height: 10rem;
+  width: 20rem;
+  text-align: center;
+}
+.title span {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.image {
+  height: 40rem;
+  width: 30rem;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+}

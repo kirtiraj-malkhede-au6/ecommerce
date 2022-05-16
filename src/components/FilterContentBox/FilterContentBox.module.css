@@ -1,0 +1,110 @@
+.filter-content-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 22.5rem;
+}
+.filter-content-box-header {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0rem;
+  background-color: transparent;
+}
+
+.filter-content-box-header span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.filter-content-box-searchbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: 3rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.filter-content-box-searchbar div {
+  padding: 0.85rem 1rem 0rem 1rem;
+  height: 85%;
+  width: 15%;
+  font-size: 1.5rem;
+  color: #999;
+}
+.filter-content-box-searchbar input {
+  border-style: none;
+  width: 100%;
+  text-transform: capitalize;
+}
+.filter-content-box-searchbar input:focus {
+  outline-style: none;
+}
+
+.filter-content-box-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem 0rem 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  min-height: fit-content;
+  max-height: 18.5rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* scorbar css code */
+
+.filter-content-box-list::-webkit-scrollbar {
+  width: 0.9rem;
+}
+.filter-content-box-list::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 0.35rem;
+  border-color: white;
+  border-radius: 100vw;
+}
+.filter-content-box-list::-webkit-scrollbar-thumb {
+  border-style: solid;
+  border-radius: 100vw;
+  border-width: 0.3rem;
+  border-color: white;
+  /* background-color: aquamarine; */
+  background: linear-gradient(45deg, #0575e6, #00f260);
+}
+.filter-content-box-list::-webkit-scrollbar-thumb:hover {
+  border-width: 0.25rem;
+  transition: 1s;
+}
+.filter-content-box-list li {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 18.5rem;
+}
+.filter-content-box-list li div {
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+  background-color: #ebedee;
+  border: 1.5px solid #d6d9dc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.filter-content-box-list li div:hover {
+  border: 1.5px solid #00c3ff;
+  transition: 0.5s;
+}
+.filter-content-box-list li .active {
+  border: 1.5px solid #00c3ff;
+}

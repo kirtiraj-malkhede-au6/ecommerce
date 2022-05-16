@@ -1,0 +1,17 @@
+.icon-button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+.cart-icon {
+  background-color: transparent;
+  font-size: 2rem;
+  color: #009ec2; /* fallback for old browsers */
+}
+
+/* Hover on cart button */
+.icon-button :hover {
+  color: #0abf53;
+  font-size: 2.5rem;
+  transition: 00.35s;
+}

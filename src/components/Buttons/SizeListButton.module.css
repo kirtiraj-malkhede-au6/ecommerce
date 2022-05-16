@@ -1,0 +1,35 @@
+.container-size-button {
+  height: 100%;
+  width: 12.73%;
+  border-radius: 100%;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  border-color: rgb(235, 235, 235);
+  border-style: solid;
+  vertical-align: middle;
+}
+.container-size-button-unable {
+  height: 100%;
+  width: 12%;
+  border-radius: 100%;
+  border-width: 0.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-color: #999;
+  border-style: solid;
+  vertical-align: middle;
+  cursor: not-allowed;
+  color: #999;
+  text-decoration: line-through;
+}
+.container-size-button-span {
+  text-align: center;
+  font-weight: 600;
+  vertical-align: 0.1rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+.container-size-button:hover {
+  border-color: #009ec2;
+  transition: 00.15s;
+}

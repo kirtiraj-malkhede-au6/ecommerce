@@ -1,0 +1,125 @@
+.container {
+  position: fixed;
+  top: 8.1rem;
+  right: 0rem;
+  padding: 0.5rem;
+  height: 20rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.profile-icon-box {
+  padding: 0.5rem;
+  height: 4rem;
+  text-align: center;
+}
+.profile-icon {
+  font-size: 3rem;
+  color: rgb(0, 255, 136);
+}
+.welcome-box {
+  padding: 0.5rem;
+  height: 3rem;
+  text-align: center;
+}
+.welcome-box h3 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: white;
+}
+.account-box {
+  padding: 0.5rem;
+  height: 2rem;
+  text-align: left;
+  cursor: pointer;
+}
+.account-box span {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: white;
+}
+.account-box span:hover {
+  color: rgb(0, 255, 136);
+}
+.order-history-box {
+  padding: 0.5rem;
+  height: 2rem;
+  text-align: left;
+  cursor: pointer;
+}
+.order-history-box span {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: white;
+}
+.order-history-box span:hover {
+  color: rgb(0, 255, 136);
+}
+.signout-box {
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+  height: 2rem;
+  text-align: left;
+}
+.signout-box button {
+  height: 2rem;
+  width: 6rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  background-color: white;
+}
+.signout-box button:hover {
+  background-color: rgb(0, 255, 136);
+  transition: 0.5s;
+}
+
+/* responsive breakpoint */
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    position: fixed;
+    top: 8rem;
+    right: 0rem;
+    padding: 0.5rem;
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    position: fixed;
+    top: 8rem;
+    right: 0rem;
+    padding: 0.5rem;
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    top: 6rem;
+  }
+}

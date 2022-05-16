@@ -1,0 +1,167 @@
+.filter-header {
+  position: relative;
+  margin-top: 10rem;
+  margin-inline: 5rem;
+  padding-inline: 3rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  border-bottom: 1px solid black;
+}
+
+.filter-header-filter {
+  margin-top: 4.5rem;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+  background-color: white;
+}
+.filter-header-filter h1 {
+  font-size: 2.5rem;
+}
+.filter-header-filter span {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.filter-header-sort {
+  margin-top: 4.5rem;
+  padding: 1rem;
+  height: 100%;
+  width: 22rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: flex-start;
+  background-color: white;
+}
+.logo {
+  padding-inline: 1rem;
+}
+
+.logo .icon {
+  font-size: 2rem;
+  /* background-color: beige; */
+}
+
+.sort {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  cursor: pointer;
+  /* background-color: blanchedalmond; */
+}
+.sort h2 {
+  height: 50%;
+  font-size: 1.5rem;
+}
+
+.relevance {
+  height: 50%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* background-color: azure; */
+}
+.relevance h3 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+.relevance span {
+  width: 3rem;
+  font-size: 1.25rem;
+}
+.drop-icon {
+  margin-top: 0.25rem;
+  font-size: 2.5rem;
+}
+
+/* responsive breakpoint */
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .filter-header {
+    position: static;
+    height: fit-content;
+    width: 90%;
+    padding-inline: 0;
+    margin-inline: auto;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  .filter-header-filter {
+    margin: 0;
+    padding-inline: auto;
+    width: 50%;
+  }
+  .filter-header-sort {
+    margin: 0;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    width: 50%;
+
+    border-left: 1px solid black;
+    /* justify-content: space-between; */
+  }
+  .filter-header-filter h1 {
+    font-size: 2rem;
+  }
+  .filter-header-filter span {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .sort {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: flex-start;
+    cursor: pointer;
+    /* background-color: blanchedalmond; */
+  }
+
+  .sort h2 {
+    height: 50%;
+    font-size: 1.5rem;
+    padding-inline: 0px;
+  }
+
+  .relevance {
+    padding-inline: 0px;
+    gap: 0.25rem;
+    color: rgb(255, 94, 94);
+  }
+  .relevance h3 {
+    font-size: 1rem;
+  }
+  .relevance span {
+    width: auto;
+
+    display: none;
+  }
+  .drop-icon {
+    font-size: 2rem;
+  }
+}

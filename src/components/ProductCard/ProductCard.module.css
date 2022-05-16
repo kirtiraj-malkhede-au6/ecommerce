@@ -1,0 +1,73 @@
+.container {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(139, 139, 139);
+}
+.container:hover {
+  border-color: rgba(0, 0, 0, 0.274);
+  -webkit-box-shadow: 0px 0px 15px -10px #000000;
+  box-shadow: -3px 3px 20px -6px #000000;
+  border: 0.1rem solid rgb(139, 139, 139);
+}
+
+.image-box {
+  height: 33rem;
+}
+.image-box img {
+  height: 100%;
+  width: 100%;
+}
+.headline-box {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.headline-box span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.price-box {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.price-box .final {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.price-box .original {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.price-box .offer {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(255, 27, 76);
+}
+.conatiner-buttons {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.cart-button-1 {
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+}
+.cart-button-2 {
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+}

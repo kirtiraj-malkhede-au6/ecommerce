@@ -1,0 +1,57 @@
+.container {
+  margin-top: 0rem;
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+}
+.container h1 {
+  padding-top: 1rem;
+  margin-left: 6%;
+  /* margin-left: 31.3%; */
+  font-size: 4rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.container h1 span {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.button-box {
+  margin-top: 1rem;
+  margin-right: 0rem;
+  margin-left: 51rem;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.button-box div {
+  height: 100%;
+  width: 30%;
+  padding: 1rem 0rem 0.5rem 1rem;
+  background-color: transparent;
+}
+.button-box div:hover {
+  color: rgb(53, 255, 104);
+  transition: 0.75s;
+}
+
+.whilist-icon {
+  font-size: 3rem;
+}
+.cart-icon {
+  font-size: 3rem;
+}
+.profile-icon {
+  font-size: 3rem;
+}
