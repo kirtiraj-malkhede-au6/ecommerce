@@ -79,6 +79,23 @@ li {
 
 .menu-link {
   width: 30em;
+  /* display: none; */
+}
+.active {
+  width: 30em;
+}
+.active ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.active ul li a {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  transition: 0.5s;
 }
 .menu-link ul {
   width: 100%;
@@ -123,6 +140,18 @@ li {
 }
 .hamburger-menu {
   display: none;
+  background-color: rgba(255, 255, 255, 0.488);
+  padding: 4px;
+  padding-top: 6px;
+  text-align: center;
+}
+.menu-icon {
+  color: rgb(0, 0, 0);
+  font-size: 2.6rem;
+}
+.close-icon {
+  color: white;
+  font-size: 2.6rem;
 }
 .menu-link ul li :hover,
 .menu-link ul li :active,
@@ -182,6 +211,9 @@ li {
   .menu-link {
     width: 25em;
   }
+  .active {
+    width: 25em;
+  }
   .shoping-box {
     width: 100%;
     height: 5rem;
@@ -206,6 +238,7 @@ li {
 @media (min-width: 320px) and (max-width: 575.98px) {
   .main-nav {
     padding-inline: 2rem;
+    height: 7rem;
   }
 
   .search-bar {
@@ -226,10 +259,10 @@ li {
   }
   .menu-link {
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     right: 0px;
     width: 100vw;
-    background-color: #3adeff;
+    background-color: #101010;
   }
   .menu-link ul {
     padding: 5rem 2rem;
@@ -242,21 +275,29 @@ li {
     gap: 3rem;
   }
   .menu-link ul li a {
-    color: rgb(0, 0, 0);
+    color: #c1d3c7;
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: capitalize;
     transition: 0.5s;
   }
+  .active {
+    display: none;
+  }
+
   .hamburger-menu {
     display: block;
   }
   .shopping-list li {
     all: unset;
   }
-  .shoping-icon {
+  .menu-icon {
+    color: rgb(0, 0, 0);
+    font-size: 2.4rem;
+  }
+  .close-icon {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 /* // X-Small devices (portrait phones, less than 320px) */
@@ -296,7 +337,7 @@ li {
     top: 6rem;
     right: 0px;
     width: 100vw;
-    background-color: #3adeff;
+    background-color: #101010;
   }
   .menu-link ul {
     padding: 5rem 2rem;
@@ -309,11 +350,14 @@ li {
     gap: 3rem;
   }
   .menu-link ul li a {
-    color: rgb(0, 0, 0);
+    color: #c1d3c7;
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: capitalize;
     transition: 0.5s;
+  }
+  .active {
+    display: none;
   }
   .hamburger-menu {
     display: block;
@@ -321,7 +365,12 @@ li {
   .shopping-list li {
     all: unset;
   }
-  .shoping-icon {
-    font-size: 2.5rem;
+  .menu-icon {
+    color: black;
+    font-size: 2rem;
+  }
+  .close-icon {
+    color: white;
+    font-size: 2rem;
   }
 }

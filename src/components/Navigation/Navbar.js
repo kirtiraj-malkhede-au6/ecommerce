@@ -3,15 +3,22 @@ import { Link, NavLink } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 import { BiSearchAlt2 } from "react-icons/bi";
 import CartlistOverlay from "../Banner/CartlistOverlay";
 import WishlistOverlay from "../Banner/WishlistOverlay";
 import ProfileOverlay from "../Banner/ProfileOverlay";
 import classes from "./Navbar.module.css";
+
 const Navbar = () => {
   const [isShowWishlist, setIsShowWishlist] = useState(false);
   const [isShowCartlist, setIsShowCartlist] = useState(false);
   const [isShowProfile, setIsShowProfile] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(null);
+
+  const toggleMenuhandler = () => {
+    setToggleMenu(!toggleMenu);
+  };
 
   return (
     <Fragment>
@@ -31,25 +38,47 @@ const Navbar = () => {
             <BiSearchAlt2 className={classes["search-icon"]} />
           </button>
         </div>
-        <div className={classes["menu-link"]}>
+        <div
+          className={
+            toggleMenu === false || toggleMenu === null
+              ? classes[("menu-link", "active")]
+              : classes["menu-link"]
+          }
+        >
           <ul>
             <li>
-              <NavLink activeClassName={classes.active} to="/tshirt">
+              <NavLink
+                onClick={() => toggleMenuhandler()}
+                activeClassName={classes.active}
+                to="/tshirt"
+              >
                 t-shirt
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName={classes.active} to="/shirt">
+              <NavLink
+                onClick={() => toggleMenuhandler()}
+                activeClassName={classes.active}
+                to="/shirt"
+              >
                 shirt
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName={classes.active} to="/jeans">
+              <NavLink
+                onClick={() => toggleMenuhandler()}
+                activeClassName={classes.active}
+                to="/jeans"
+              >
                 Jeans
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName={classes.active} to="/jacket">
+              <NavLink
+                onClick={() => toggleMenuhandler()}
+                activeClassName={classes.active}
+                to="/jacket"
+              >
                 Jackets
               </NavLink>
             </li>
@@ -91,10 +120,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className={classes["hamburger-menu"]}>
-          <GiHamburgerMenu
-            className={classes["shoping-icon"]}
-          ></GiHamburgerMenu>
+        <div
+          className={classes["hamburger-menu"]}
+          onClick={() => toggleMenuhandler()}
+        >
+          {toggleMenu === false || toggleMenu === null ? (
+            <GiHamburgerMenu className={classes["menu-icon"]}></GiHamburgerMenu>
+          ) : (
+            <GrClose className={classes["close-icon"]}></GrClose>
+          )}
         </div>
       </nav>
       {isShowWishlist && <WishlistOverlay />}

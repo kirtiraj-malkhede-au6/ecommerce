@@ -1,13 +1,13 @@
 .selected-option {
-  margin: 2rem 5rem 0rem 3rem;
-  height: 4rem;
-  width: 70em;
+  padding: 0.5rem 0rem;
+  min-width: fit-content;
+  max-width: 70rem;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
-  background-color: white;
 }
 .reset {
   height: 3rem;
@@ -17,19 +17,16 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid black;
   background-color: black;
   cursor: pointer;
 }
 .selection-container {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-content: flex-start;
   align-items: center;
   gap: 1rem;
-  background-color: white;
   overflow: scroll;
   overflow-x: auto;
   overflow-y: hidden;
@@ -58,24 +55,24 @@
 }
 .selection-container li {
   height: 2.5rem;
+  padding-inline: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-items: center;
   align-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
 }
 .selection-container li p {
-  padding-left: 0.5rem;
   font-size: 1.5rem;
   color: black;
   font-weight: 400;
 }
 .selection-container li button {
-  margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
   border-style: none;
   cursor: pointer;
   background-color: white;

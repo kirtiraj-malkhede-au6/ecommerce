@@ -1,16 +1,17 @@
 .container {
-  margin-top: 0rem;
+  padding-inline: 4rem;
+  position: fixed;
+  top: 0px;
   height: 7rem;
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: white;
-  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
 }
 .container h1 {
-  padding-top: 1rem;
-  margin-left: 6%;
-  /* margin-left: 31.3%; */
   font-size: 4rem;
   font-weight: bolder;
   text-transform: uppercase;
@@ -23,22 +24,16 @@
   text-transform: uppercase;
 }
 .button-box {
-  margin-top: 1rem;
-  margin-right: 0rem;
-  margin-left: 51rem;
   height: 100%;
   width: 25%;
   display: flex;
   flex-direction: row;
   background-color: transparent;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 .button-box div {
-  height: 100%;
-  width: 30%;
-  padding: 1rem 0rem 0.5rem 1rem;
   background-color: transparent;
 }
 .button-box div:hover {
@@ -54,4 +49,73 @@
 }
 .profile-icon {
   font-size: 3rem;
+}
+
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    padding-inline: 3rem;
+  }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    padding-inline: 3rem;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .container {
+    height: 5rem;
+    padding-inline: 2rem;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container h1 span {
+    font-size: 3rem;
+  }
+  .button-box {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding-inline: 1.5rem;
+    width: 100vw;
+    height: 5rem;
+
+    border-top: 1px solid black;
+  }
+  .button-box div {
+    padding-block: unset;
+  }
+}
+/* // X-Small devices (portrait phones, less than 320px) */
+@media (max-width: 319.98px) {
+  .container {
+    padding-inline: 1rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .container h1 span {
+    font-size: 2.5rem;
+  }
+  .button-box {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding-inline: 1rem;
+    width: 100vw;
+    height: 5rem;
+
+    border-top: 1px solid black;
+  }
 }

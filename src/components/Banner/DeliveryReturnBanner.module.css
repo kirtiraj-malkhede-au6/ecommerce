@@ -1,13 +1,14 @@
 .deliver-return {
-  margin: 2rem 0rem 1rem 27rem;
-  height: 12rem;
-  width: 70rem;
+  margin-block: 5rem;
+  margin-inline: 15%;
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7rem;
 }
 .deliver-return-box {
-  margin: 1rem 1rem 1rem 1rem;
   height: 10rem;
   width: 15rem;
   display: flex;
@@ -43,3 +44,36 @@
 /* .quality-assurance {
     background-color: rgb(255, 255, 255);
   } */
+
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .deliver-return {
+    gap: 4rem;
+  }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .deliver-return {
+    margin-block: 5rem;
+    gap: 3rem;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .deliver-return {
+    margin-block: 5rem;
+    gap: 2rem;
+  }
+}
+/* // X-Small devices (portrait phones, less than 320px) */
+@media (max-width: 319.98px) {
+  .deliver-return {
+    margin-block: 5rem;
+    gap: 1rem;
+  }
+}

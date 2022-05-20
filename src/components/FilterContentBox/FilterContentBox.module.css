@@ -4,6 +4,7 @@
   flex-direction: column;
   border: 1px solid black;
   width: 22.5rem;
+  background-color: #0575e6;
 }
 .filter-content-box-header {
   padding-top: 1.5rem;

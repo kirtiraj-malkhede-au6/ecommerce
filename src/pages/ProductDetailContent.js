@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import DeliveryReturnBanner from "../components/Banner/DeliveryReturnBanner";
 import { RiArrowLeftSFill } from "react-icons/ri";
 import { FcApproval } from "react-icons/fc";
+import { AiOutlineHeart } from "react-icons/ai";
 
 import classes from "./ProductDetailContent.module.css";
 const ProductDetailContent = () => {
@@ -91,6 +92,9 @@ const ProductDetailContent = () => {
               // height="700"
               // width="300"
             />
+            <div className={classes["wish-icon-box"]}>
+              <AiOutlineHeart className={classes["icon"]} />
+            </div>
           </div>
         </div>
         <div className={classes["detail-section"]}>

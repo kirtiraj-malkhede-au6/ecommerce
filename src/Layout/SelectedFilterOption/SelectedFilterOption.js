@@ -12,7 +12,6 @@ const SelectedFilterOption = () => {
             <AiOutlineClose className={classes["cancel-icon"]}></AiOutlineClose>
           </button>
         </li>
-
         <li>
           <p>Bomber</p>
           <button>
