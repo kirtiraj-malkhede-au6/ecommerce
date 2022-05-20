@@ -12,11 +12,15 @@ const Home = (props) => {
   };
   scrollToTop();
   return (
-    <Fragment className={classes["page"]}>
+    <Fragment>
       <FilterHeader></FilterHeader>
       <layout className={classes["product-page"]}>
         <div className={classes["product-page-filter-section"]}>
-          <h4 className={classes["filter-title"]}>Filters</h4>
+          <div className={classes["filter-title-box"]}>
+            <spna className={classes["filter-title"]}>Filters</spna>
+            <button className={classes["Filter-apply-button"]}>Apply</button>
+          </div>
+
           <div className={classes["filter-content"]}>
             {props.filterData.map((element) => (
               <FilterContentBox filterData={element} />

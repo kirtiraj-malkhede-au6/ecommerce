@@ -1,9 +1,10 @@
 .container {
-  margin-top: 1rem;
-  margin-right: 1rem;
+  width: 23rem;
+  height: 42rem;
   background-color: white;
   display: flex;
   flex-direction: column;
+  gap: 1%;
   border: 1px solid rgb(139, 139, 139);
 }
 .container:hover {
@@ -14,17 +15,19 @@
 }
 
 .image-box {
-  height: 33rem;
+  width: 100%;
+  height: 73%;
+  overflow: hidden;
 }
 .image-box img {
   height: 100%;
   width: 100%;
 }
 .headline-box {
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
+  height: 4%;
+  padding-inline: 1rem;
   text-align: center;
+  overflow: hidden;
 }
 .headline-box span {
   font-size: 1.25rem;
@@ -32,10 +35,10 @@
   text-transform: capitalize;
 }
 .price-box {
-  margin-top: 0.5rem;
-  padding-top: 1rem;
+  height: 8%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 .price-box .final {
@@ -53,21 +56,50 @@
   color: rgb(255, 27, 76);
 }
 .conatiner-buttons {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  height: 12%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: nowrap;
 }
 .cart-button-1 {
-  height: 3rem;
-  width: 3rem;
+  width: 25%;
   text-align: center;
 }
 .cart-button-2 {
-  height: 3rem;
-  width: 3rem;
+  width: 25%;
   text-align: center;
+}
+/* responsive breakpoint */
+/* responsive css style  */
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+@media (max-width: 516.98px) {
+  .container {
+    height: 80vw;
+    width: 45vw;
+  }
+  .headline-box span {
+    font-size: 2vmin;
+  }
+  .price-box .final {
+    font-size: 2.5vmin;
+  }
+  .price-box .original {
+    font-size: 2.5vmin;
+  }
+  .price-box .offer {
+    font-size: 2.5vmin;
+  }
 }
