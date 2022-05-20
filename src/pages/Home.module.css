@@ -11,7 +11,6 @@
 .product-main-container {
   display: flex;
   flex-direction: column;
-  background-color: bisque;
 }
 .product-main-container-1 {
   padding: 0;
@@ -26,6 +25,7 @@
   flex-wrap: wrap;
   row-gap: 1rem;
   column-gap: 1rem;
+  background-color: whitesmoke;
 }
 
 /* Filter section CSS code */
@@ -91,5 +91,15 @@
   }
   .product-main-container-1 {
     display: none;
+  }
+  .product-page-layout {
+    padding-block: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 0px;
   }
 }
