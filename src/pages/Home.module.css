@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   row-gap: 1rem;
   column-gap: 1rem;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 /* Filter section CSS code */
@@ -94,12 +94,7 @@
   }
   .product-page-layout {
     padding-block: 0rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 2px;
+    row-gap: 0px;
     column-gap: 0px;
   }
 }

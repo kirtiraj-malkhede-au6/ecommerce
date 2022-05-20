@@ -11,7 +11,7 @@
   border-color: rgba(0, 0, 0, 0.274);
   -webkit-box-shadow: 0px 0px 15px -10px #000000;
   box-shadow: -3px 3px 20px -6px #000000;
-  border: 0.1rem solid rgb(139, 139, 139);
+  border: 1rem solid rgb(139, 139, 139);
 }
 
 .image-box {
@@ -87,8 +87,9 @@
 }
 @media (max-width: 516.98px) {
   .container {
-    height: 80vw;
-    width: calc(50vw - 1px);
+    height: 85vw;
+    width: calc(50vw);
+    border: none;
   }
   .container:hover {
     all: unset;
